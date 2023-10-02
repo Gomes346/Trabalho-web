@@ -1,0 +1,31 @@
+/* ========= VARIABLES ========= */
+
+
+/*
+     * https://developer.mozilla.org/pt-BR/docs/Web/CSS/:root
+     * A pseudo-classe CSS  :root se equipara à raíz de uma árvore, 
+     * que por sua vez representa o documento. Aplicado ao HTML, 
+     * :root representa o elemento <html> e é identico ao seletor html,
+     * exceto que sua especificidade é mais alta.
+     */
+
+     :root {
+      font-size: 62.5%;
+      --standart-padding: 2.0rem;
+      /* fonts type*/
+      --title-font: 'Poppins', sans-serif;
+      --text-font: 'DM Sans', sans-serif;
+      /* fonts size */
+      --title-font-size: 3.0rem;
+      --subtitle-font-size: 2.3rem;
+      --text-font-size: 1.6rem;
+      /* colors */
+      --base-color-one: #373E40;
+      --base-color-two: #488286;
+      --base-color-three: #305252;
+      --text-color: var(--base-color-one);
+      --background-color: #B7D5D4;
+      --text-color-light: hsl(0 0% 90%);
+      --title-color: hsl(0 0% 10%);
+      /* HSL color mode */
+  }
