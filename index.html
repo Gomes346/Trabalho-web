@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- FONTS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="variaveis.css" />
+    <link rel="stylesheet" href="grid.css">
     <script src="script.js"></script>
     <title>Desenvolvimento Web</title>
   </head>
@@ -60,7 +59,9 @@
         </div>
       </nav>
       <main class="content">
-        <h1 class="title">Desenvolvimento Web</h1>
+        <div class="home">
+          <h1 class="home-text">Desenvolvimento Web</h1>
+        </div>
         <section id="introdução1" class="textos">
           <h2 class="sub-title">Introdução</h2>
           <p>
@@ -221,83 +222,89 @@
         </section>
         <section id="frontback" class="textos">
           <h2>O que significa front-end e back-end?</h2>
-          <p>
-            Front-end e back-end são dois termos fundamentais no desenvolvimento
-            web que se referem a diferentes aspectos do processo de construção
-            de um site ou aplicativo web. Eles se concentram em áreas distintas
-            da aplicação e desempenham papéis complementares. Aqui está o
-            significado de cada um:
-          </p>
-
-          <h3>Front-end</h3>
-          <p>
-            O termo "front-end" refere-se à parte visível e interativa de um
-            site ou aplicativo web, ou seja, à interface do usuário (UI) e à
-            experiência do usuário (UX). O front-end é o que os usuários veem e
-            com o qual interagem diretamente. Algumas das principais
-            características do front-end incluem:
-          </p>
-          <ol>
-            <li>
-              <b>Design Visual:</b> Isso envolve o layout, cores, tipografia,
-              imagens e todos os elementos visuais que compõem a aparência do
-              site ou aplicativo.
-            </li>
-            <li>
-              <b>HTML (HyperText Markup Language):</b> É a linguagem usada para
-              estruturar o conteúdo da web, definindo os elementos como
-              cabeçalhos, parágrafos, listas e links.
-            </li>
-            <li>
-              <b>CSS (Cascading Style Sheets):</b> É usado para estilizar o
-              HTML, determinando a formatação, o posicionamento e o estilo dos
-              elementos na página.
-            </li>
-            <li>
-              <b>JavaScript:</b> É uma linguagem de programação que permite a
-              interatividade na web. Desenvolvedores front-end usam JavaScript
-              para criar animações, validação de formulários, efeitos visuais e
-              interações dinâmicas.
-            </li>
-          </ol>
-
+          <div class="front-main">
+            <h3>Front-end</h3>
+            <div class="frontback">
+              <img src="imagens/inconFront.png" class="icons">
+              <div class="frontback-texto">
+                <p>
+                  O termo "front-end" refere-se à parte visível e interativa de um
+                  site ou aplicativo web, ou seja, à interface do usuário (UI) e à
+                  experiência do usuário (UX). O front-end é o que os usuários veem e
+                  com o qual interagem diretamente. Algumas das principais
+                  características do front-end incluem:
+                </p>
+                  <ol>
+                    <li>
+                      <b>Design Visual:</b> Isso envolve o layout, cores, tipografia,
+                      imagens e todos os elementos visuais que compõem a aparência do
+                      site ou aplicativo.
+                    </li>
+                    <li>
+                      <b>HTML (HyperText Markup Language):</b> É a linguagem usada para
+                      estruturar o conteúdo da web, definindo os elementos como
+                      cabeçalhos, parágrafos, listas e links.
+                    </li>
+                    <li>
+                      <b>CSS (Cascading Style Sheets):</b> É usado para estilizar o
+                      HTML, determinando a formatação, o posicionamento e o estilo dos
+                      elementos na página.
+                    </li>
+                    <li>
+                      <b>JavaScript:</b> É uma linguagem de programação que permite a
+                      interatividade na web. Desenvolvedores front-end usam JavaScript
+                      para criar animações, validação de formulários, efeitos visuais e
+                      interações dinâmicas.
+                    </li>
+                  </ol>
+              </div>             
+            </div>
+        </div>
+        <div class="back-main">
           <h3>Back-end</h3>
-          <p>
-            O "back-end" é a parte não visível de um site ou aplicativo web. Ele
-            lida com a lógica de negócios, o processamento de dados, o
-            gerenciamento de bancos de dados e a comunicação com o servidor.
-            Algumas das principais características do back-end incluem:
-          </p>
-          <ol>
-            <li>
-              <b>Lógica de Negócios:</b> Os desenvolvedores back-end criam a
-              lógica que permite que o site realize tarefas específicas, como
-              processar pedidos, gerenciar contas de usuário, autenticar
-              usuários e muito mais.
-            </li>
-            <li>
-              <b>Banco de Dados:</b> Eles projetam e mantêm bancos de dados que
-              armazenam informações críticas, como dados do usuário, conteúdo do
-              site e registros de transações.
-            </li>
-            <li>
-              <b>Segurança:</b> Os desenvolvedores back-end são responsáveis por
-              implementar medidas de segurança para proteger dados sensíveis e
-              garantir que o site seja resistente a ataques cibernéticos.
-            </li>
-            <li>
-              <b>Tecnologia do Servidor:</b> Eles escolhem a tecnologia do
-              servidor, como linguagens de programação (por exemplo, Python,
-              Ruby, PHP, Java) e frameworks, para construir a parte lógica do
-              aplicativo.
-            </li>
-            <li>
-              <b>APIs (Interfaces de Programação de Aplicativos):</b> Eles criam
-              APIs que permitem a comunicação entre o front-end e o back-end,
-              permitindo que o site ou aplicativo envie e receba dados do
-              servidor.
-            </li>
-          </ol>
+          <div class="frontback">
+            <div class="frontback-texto">  
+              <p>
+                O "back-end" é a parte não visível de um site ou aplicativo web. Ele
+                lida com a lógica de negócios, o processamento de dados, o
+                gerenciamento de bancos de dados e a comunicação com o servidor.
+                Algumas das principais características do back-end incluem:
+              </p>
+              <ol>
+                <li>
+                  <b>Lógica de Negócios:</b> Os desenvolvedores back-end criam a
+                  lógica que permite que o site realize tarefas específicas, como
+                  processar pedidos, gerenciar contas de usuário, autenticar
+                  usuários e muito mais.
+                </li>
+                <li>
+                  <b>Banco de Dados:</b> Eles projetam e mantêm bancos de dados que
+                  armazenam informações críticas, como dados do usuário, conteúdo do
+                  site e registros de transações.
+                </li>
+                <li>
+                  <b>Segurança:</b> Os desenvolvedores back-end são responsáveis por
+                  implementar medidas de segurança para proteger dados sensíveis e
+                  garantir que o site seja resistente a ataques cibernéticos.
+                </li>
+                <li>
+                  <b>Tecnologia do Servidor:</b> Eles escolhem a tecnologia do
+                  servidor, como linguagens de programação (por exemplo, Python,
+                  Ruby, PHP, Java) e frameworks, para construir a parte lógica do
+                  aplicativo.
+                </li>
+                <li>
+                  <b>APIs (Interfaces de Programação de Aplicativos):</b> Eles criam
+                  APIs que permitem a comunicação entre o front-end e o back-end,
+                  permitindo que o site ou aplicativo envie e receba dados do
+                  servidor.
+                </li>
+              </ol>
+            </div>
+              <img src="imagens/iconBack.png" class="icons">
+          </div>
+        </div>
+        
         </section>
         <section id="fullstack" class="textos">
           <h2>O que é desenvolvimento web full stack?</h2>
